@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors</title>
+    <link rel="icon" type="image/x-icon" href="healthcare_logo.png">
+    <link rel="stylesheet" href="style.css">
+	
+    <style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		header, nav, main, footer {
+			padding: 10px;
+		}
+
+		header {
+			background-color: #009d00;
+			color: #fff;
+			text-align: center;
+		}
+		.flex-container {
+		  display: flex;
+		  flex-wrap: wrap;
+		  background-color: rgb(216, 247, 206);
+		}
+		
+		.flex-container > div {
+		  background-color: #f1f1f1;
+		  width: 350px;
+		  height: 350px;
+		  margin: 70px;
+		  text-align: center;
+		  line-height: 75px;
+		  font-size: 30px;
+		}
+
+
+		footer {
+			background-color: #333;
+			color: #fff;
+			text-align: center;
+		}
+
+		@media screen and (max-width: 768px) {
+			main {
+				flex-direction: column;
+				align-items: center;
+			}
+
+			section {
+				flex-basis: 80%;
+			}
+		}
+	</style>
+</head>
+<body>
+    <header>
+		<div class="site-logo">
+			<img src="healthcare_logo.png" alt="logo" height="70px" width="50px" style="padding-bottom: 20px; border-radius: 30px;">
+		</div>
+		<p ><h1 style="margin: auto;">Medcare Solutions </h1></p>
+			
+	</header>
+
+	<nav>
+        <br><br>
+		
+	</nav>
+	<br>
+
+	<p><h1 style="text-align: center;">Our Experts </h1></p>
+	<br>
+
+	<div class="flex-container">
+		<div>
+			<h5><p id="demo"></p></h5>
+			<img src="doc_1  (1).png" alt="abc" height="170px" width="170px">
+			
+		</div>
+		<div>
+			<h5><p id="demo1"></h5>
+			<img src="doc_1  (2).png" alt="c" height="170px" width="170px">
+		</div>
+		<div>
+			<h5><p id="demo2"></h5>
+			<img src="doc_1  (3).png" alt="bc" height="170px" width="170px">
+		</div>  
+		<div>
+			<h5><p id="demo3"></h5>
+			<img src="doc_1  (4).png" alt="a" height="170px" width="170px">
+		</div>
+		<div>
+			<h5><p id="demo4">  </h5>
+			<img src="doc_1  (5).png" alt="ab" height="170px" width="170px">
+		</div>
+		<div>
+			<h5><p id="demo5"></h5>
+			<img src="doc_1 (6).png" alt="pqr" height="170px" width="170px">
+		</div>   
+	  </div>
+    <br><br><br><br>
+	
+
+	<script>
+
+		var myObj = { s1: "Dr",s2: "Phil" };
+		var myObj1 = { s1: "Dr",s2: "Jones" };
+		var myObj2 = { s1: "Dr",s2: "Krishna" };
+		var myObj3 = { s1: "Dr",s2: "Mach" };
+		var myObj4 = { s1: "Dr",s2: "Rebecca" };
+		var myObj5 = { s1: "Dr",s2: "Arun" };
+
+		var myJSON = JSON.stringify(myObj);
+		var myJSON1 = JSON.stringify(myObj1);
+		var myJSON2 = JSON.stringify(myObj2);
+		var myJSON3 = JSON.stringify(myObj3);
+		var myJSON4 = JSON.stringify(myObj4);
+		var myJSON5 = JSON.stringify(myObj5);
+
+		
+		var myNewObj =JSON.parse(myJSON);
+		var myNewObj1 =JSON.parse(myJSON1);
+		var myNewObj2 =JSON.parse(myJSON2);
+		var myNewObj3 =JSON.parse(myJSON3);
+		var myNewObj4 =JSON.parse(myJSON4);
+		var myNewObj5 =JSON.parse(myJSON5);
+
+		document.getElementById("demo").innerHTML = myNewObj.s1 + ' ' + myNewObj.s2;
+		document.getElementById("demo1").innerHTML = myNewObj1.s1 + ' ' + myNewObj1.s2;
+		document.getElementById("demo2").innerHTML = myNewObj2.s1 + ' ' + myNewObj2.s2;
+		document.getElementById("demo3").innerHTML = myNewObj3.s1 + ' ' + myNewObj3.s2;
+		document.getElementById("demo4").innerHTML = myNewObj4.s1 + ' ' + myNewObj4.s2;
+		document.getElementById("demo5").innerHTML = myNewObj5.s1 + ' ' + myNewObj5.s2;
+	
+	</script>
+    <footer>
+		<p style="text-align: center;"><h1>Investors</h1></p>
+		<br>
+		<p>Medcare limited is a highly promising company that offers exciting investment opportunities for potential investors.<br>
+			With a strong track record of success and a clear vision for the future, Medcare limited is well positioned to become a leader in its industry.</p>
+		<br>
+		<p>As an investor, you will have the opportunity to be part of a dynamic  <br> and growing company that is committed to delivering value to its customers and shareholders.</p> 
+		<br><br>
+	</footer>
+    
+</body>
+</html>

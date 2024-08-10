@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <link rel="icon" type="image/x-icon" href="healthcare_logo.png">
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="contact_us.css">
+    <style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		header, nav, main, footer {
+			padding: 10px;
+		}
+
+		header {
+			background-color: #009d00;
+			color: #fff;
+			text-align: center;
+		}
+
+		nav {
+			background-color: #333;
+			color: #fff;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		nav a {
+			display: inline-block;
+			padding: 10px;
+			color: #fff;
+			text-decoration: none;
+		}
+
+		nav a:hover {
+			background-color: #ddd;
+			color: #333;
+		}
+
+		main {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: flex-start;
+			background-color: #f2f2f2;
+		}
+
+		section {
+			flex-basis: 30%;
+			margin: 20px;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+
+		section h2 {
+			margin-top: 0;
+		}
+
+		form {
+			width: 100%;
+		}
+
+		form label {
+			display: block;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		form input[type="text"],
+		form input[type="email"],
+		form input[type="tel"],
+		form input[type="date"],
+		form input[type="time"],
+		form textarea {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+
+		form input[type="submit"] {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		form input[type="submit"]:hover {
+			background-color: #fff;
+			color: #333;
+		}
+
+		footer {
+			background-color: #333;
+			color: #fff;
+			text-align: center;
+		}
+
+		@media screen and (max-width: 768px) {
+			main {
+				flex-direction: column;
+				align-items: center;
+			}
+
+			section {
+				flex-basis: 80%;
+			}
+		}
+	</style>
+</head>
+<body>
+    <header>
+		<div class="site-logo">
+			<img src="healthcare_logo.png" alt="logo" height="70px" width="50px" style="padding-bottom: 20px; border-radius: 30px;">
+		</div>
+		<p ><h1 style="margin: auto;">Medcare Solutions </h1></p>
+		
+	</header>
+
+	<nav>
+        <br><br>
+		
+	</nav>
+	<br>
+	<h1 style="text-align: center;">Appointment</h1>
+    <br>
+    <div class="box2" >
+        <form id="contact-form" action="#" method="post">
+            <label for="name"><h4>Full Name</h4></label>
+            <input type="text" id="name" name="name" placeholder="Your name.." required>
+            <label for="email"><h4>Email</h4></label>
+            <input type="text" id="email" name="email" placeholder="Your email.." required> 
+            <br>
+			<label for="date">Date:</label>
+        	<input type="date" id="date" name="date" required>
+
+        	<label for="time">Time:</label>
+        	<input type="time" id="time" name="time" required>
+
+        	<label for="message">Message:</label>
+        	<textarea id="message" name="message" rows="5" required></textarea>
+
+			<input type="submit" value="Submit">
+            
+            <div id="form-errors">
+                <p class="error" id="name-error">Please enter your name</p>
+                <p class="error" id="email-error">Please enter a valid email address</p>
+                <p class="error" id="message-error">Please enter a message</p>
+            </div>
+
+
+
+
+
+	
+
+    <br><br><br><br><br><br> <br><br><br><br><br><br>
+    <footer>
+		<p style="text-align: center;"><h1>Investors</h1></p>
+		<br>
+		<p>Medcare limited is a highly promising company that offers exciting investment opportunities for potential investors.<br>
+			With a strong track record of success and a clear vision for the future, Medcare limited is well positioned to become a leader in its industry.</p>
+		<br>
+		<p>As an investor, you will have the opportunity to be part of a dynamic  <br> and growing company that is committed to delivering value to its customers and shareholders.</p> 
+		<br><br>
+	</footer>
+    
+</body>
+</html>
